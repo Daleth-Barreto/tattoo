@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplo Landing</title>
+  <link href='/styles.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="content">
+    <nav class="navbar">
+      <div class="img"></div>
+      <div class="text">
+        <a href="#about">Sobre mí</a>
+        <a href="#gallery">Galería</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </nav>
+    <main>
+      <section class="first-view">
+        <h1>Arte En Tu Piel</h1>
+        <p>Descubre el arte del tatuaje con nuestra talentosa artista. Diseños únicos que cuentan tu historia.</p>
+        <div class="btn">Reserva tu cita</div>
+      </section>
+      <section id="about">
+        <div class="content">
+          <h2>Sobre la artista</h2>
+        <p>Con más de 5 años de experiencia, nuestra artista combina técnicas tradicionales con estilos modernos para crear tatuajes únicos y personalizados que reflejan la individualidad de cada cliente.</p>
+        <div class="img" data-aos="fade-up"></div>
+        </div>
+      </section>
+      <section id="gallery" >
+        <h2>Galería de trabajos</h2>
+        <div class="img-content">
+          <div class="img" data-aos="fade-up-right"></div>
+          <div class="img" data-aos="fade-up-left"></div>
+          <div class="img" data-aos="fade-up-right"></div>
+          <div class="img" data-aos="fade-up-left"></div>
+          <div class="img" data-aos="fade-up-right"></div>
+          <div class="img" data-aos="fade-up-left"></div>
+        </div>
+      </section>
+      <section id="services" data-aos="zoom-in">
+        <h2>Nuestros Servicios</h2>
+        <div class="container">
+          <div class="service">
+            <div class="icon-container">
+              <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <div class="text">
+              <h3>Diseños personalizados</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint dolorum laudantium pariatur optio minus veritatis, voluptas repellat atque quo, asperiores at dignissimos dolores totam earum recusandae nam quae architecto reprehenderit?
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="icon-container">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="text">
+              <h3>Diseños personalizados</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint dolorum laudantium pariatur optio minus veritatis, voluptas repellat atque quo, asperiores at dignissimos dolores totam earum recusandae nam quae architecto reprehenderit?
+              </p>
+            </div>
+          </div>
+          <div class="service" >
+            <div class="icon-container">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <div class="text">
+              <h3>Diseños personalizados</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint dolorum laudantium pariatur optio minus veritatis, voluptas repellat atque quo, asperiores at dignissimos dolores totam earum recusandae nam quae architecto reprehenderit?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" data-aos="zoom-in-up">
+        <form>
+          <h2>Contáctanos</h2>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Nombre</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Correo</label>
+          </div>
+          <div class="user-box">
+            <textarea name="msg" id="msg" placeholder="Mensaje"></textarea>
+          </div>
+          <a href="#">
+            Enviar
+          </a>
+        </form>
+        <div class="contact-direct">
+          <div class="text-container">
+            <h3>Contáctanos Directamente</h3>
+            <p>Estamos disponibles para responder tus preguntas y agendar tu cita.</p>
+            <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+              Contáctanos por WhatsApp
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+              Siguenos en Instagram
+              </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2023 Tattoo Studio. Todos los derechos reservados.</p>
+      <ul>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Política de Privacidad</a>
+      </ul>
+    </footer>
+  </div>
+  <script defer type="text/javascript" src="/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/eaaa73cb5c.js" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

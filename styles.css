@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+h2{
+    color: #000;
+    font-size: 3rem;
+    text-align: center;
+}
+h3{
+    color: #000;
+    font-size: 2rem;
+}
+section{
+    margin-top: 2rem;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+nav.navbar{
+    width: 100vw;
+    height: 4rem;
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+nav .text{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+nav a{
+    color:#000;
+    text-decoration: none;
+}
+
+nav .img{
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+main{
+    margin-top: 4rem;
+    width: 100vw;
+}
+section.first-view{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    gap: 1rem;
+}
+section.first-view h1{
+    color: #fff;
+    font-size: 3rem;
+}
+section.first-view p{
+    color: #a2a2a2;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.btn{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+section#about{
+    width: 100vw;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: static;
+}
+section#about p{
+    color: #a2a2a2;
+    font-size: 1.2rem;
+}
+section#about .content{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+section#about .img{
+    width: 50vw;
+    height: 50vw;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+section#gallery{
+    padding-top: 2rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+section#gallery .img-content{
+    width: 70vw;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+}
+section#gallery .img{
+    width: 35vw;
+    height: 35vw;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+section#services{
+    width: 100vw;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: static;
+    background-color: #f9f9f9;
+
+}
+section#services .container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem
+}
+section#services .service{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+section#services .icon-container{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 50%;
+    background-color: #000;
+}
+section#services .icon-container i{
+    color: #a2a2a2;
+    font-size: 1.5rem;
+}
+section#services .text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+section#services p{
+    color: #a2a2a2;
+    font-size: 1.2rem;
+}
+section#contact{
+    width: 100vw;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:2rem;
+}
+section#contact h2{
+  padding-bottom:2rem;
+}
+section .user-box {
+    position: relative;
+    width: 80vw;
+  }
+  
+  section .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #a2a2a2;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #a2a2a2;
+    outline: none;
+    background: transparent;
+  }
+  section .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #a2a2a2;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  section .user-box input:focus ~ label,
+  section .user-box input:valid ~ label{    top: -20px;
+    left: 0;
+    color: #000;
+    font-size: 12px;
+  }
+  
+  section form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: #000;
+    width: 100%;
+  }
+  
+  section a:hover {
+    background: #222;
+    color: #fff;
+  }
+  section .user-box textarea{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #a2a2a2;
+    outline: none;
+    background: transparent;
+    resize: none;
+    height: 5rem;
+    
+  }
+  section#contact .contact-direct .text-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+  }
+  section#contact p{
+    color: #a2a2a2;
+  }
+  section#contact .contact-direct a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #000;
+  }
+footer{
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: #a2a2a2 0.1px solid;
+}
+footer p{
+  color: #a2a2a2;
+}
+footer ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+footer a{
+  color: #000;
+  text-decoration: none;
+  transition: all ease-in-out .6s;
+}
+footer a:hover{
+  text-decoration: underline;
+  transition: all ease-in-out .4s;
+}
+/* hacer la pagina responsive para computadoras*/
+@media screen and (min-width: 768px) {
+  section.first-view{
+    height: calc(100vh - 2rem);
+  }
+  section#services .container{
+    flex-direction: row;
+  }
+  section#contact{
+    flex-direction: row;
+  }
+  section#contact form .user-box{
+    width: 50%;
+    flex-direction: column;
+  }
+  section#contact form, section#contact form input, section#contact form textarea{
+    width: 50vw;
+  }
+}
